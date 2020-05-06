@@ -1,16 +1,18 @@
 .Clear {
-    background-color: gray;
+    background-color: #8F5E1E;
     color: white;
+    font: inherit;
     margin-top: 15px;
     margin-bottom: 15px;
-    padding: 15px 30px;
-    border: 1px solid gray;
+    padding: 10px 20px;
+    border: 1px solid #AA6817;
+    outline: none;
 }
 
 .Clear:hover {
-    background-color: #8c8c8c;
+    background-color: #99703F;
 }
 
-.Clear:disabled {
-    cursor: not-allowed;
+.Clear:active {
+    border: 1px solid #AA6817;
 }
