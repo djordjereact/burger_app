@@ -12,5 +12,6 @@ export {
     auth,
     loguot,
     setAuthRedirectPath,
-    authCheckState
+    authCheckState,
+    clearAllIngredients
 } from './auth'

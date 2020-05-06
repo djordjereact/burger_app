@@ -76,7 +76,7 @@ export class BurgerBuilder extends Component {
                         ordered={this.purchaseHandler}
                         isAuth={this.props.isAuthenticated}
                         price={this.props.price}
-                        clear={this.clearAllIngredients}/>
+                        clear={this.props.onClearIngredients}/>
                 </Auxiliary>
             );
             orderSummary = <OrderSummary
@@ -111,7 +111,8 @@ const mapDispatchToProps = dispatch => {
         onIngredientRemoved: (ingName) => dispatch(actions.removeIngredient(ingName)),
         onInitIngredients: () => dispatch(actions.initIngredeients()),
         onInitPurchase: () => dispatch(actions.purchaseInit()),
-        onSetAuthRedirectPath: (path) => dispatch(actions.setAuthRedirectPath(path))
+        onSetAuthRedirectPath: (path) => dispatch(actions.setAuthRedirectPath(path)),
+        onClearIngredients: () => dispatch(actions.clearAllIngredients())
     };
 };
 

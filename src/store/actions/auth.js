@@ -73,6 +73,11 @@ export const setAuthRedirectPath = (path) => {
         path: path
     }
 };
+export const clearAllIngredients = () => {
+    return {
+        type: actionTypes.CLEAR_INGREDIENTS
+    }
+};
 
 export const authCheckState = () => {
     return dispatch => {
