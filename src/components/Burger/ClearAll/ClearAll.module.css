@@ -16,3 +16,14 @@
 .Clear:active {
     border: 1px solid #AA6817;
 }
+
+.Clear:disabled {
+    background-color: #7E7365;
+    cursor: not-allowed;
+    border: 1px solid #7E7365;
+    color: #cccccc;
+}
+
+.Clear:not(:disabled) {
+    animation: enable 0.3s linear;
+}

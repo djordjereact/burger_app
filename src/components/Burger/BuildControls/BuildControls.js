@@ -21,7 +21,7 @@ const buildControls = (props) => (
                 removed={() => props.ingredidentRemoved(ctrl.type)}
                 disabled={props.disabled[ctrl.type]}/>
         ))}
-        <ClearAll click={props.clear}/>
+        <ClearAll disabled={!props.purchasable} click={props.clear}/>
         <button
             className={classes.OrderButton}
             disabled={!props.purchasable}
