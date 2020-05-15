@@ -80,7 +80,7 @@ const BurgerBuilder = props => {
                         ordered={purchaseHandler}
                         isAuth={isAuthenticated}
                         price={price}
-                        clear={onClearIngredients}/>
+                        clearAll={onClearIngredients}/>
                 </Auxiliary>
             );
             orderSummary = <OrderSummary
